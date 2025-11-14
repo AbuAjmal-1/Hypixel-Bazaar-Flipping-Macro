@@ -1,0 +1,29 @@
+# Gradle
+.gradle/
+build/
+out/
+classes/
+
+# ForgeGradle
+run/
+eclipse/
+.metadata/
+
+# IntelliJ IDEA
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Eclipse
+*.launch
+.settings/
+.project
+.classpath
+
+# MacOS
+.DS_Store
+
+# Other
+bin/
+*.log
