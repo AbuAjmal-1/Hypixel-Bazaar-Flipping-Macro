@@ -8,6 +8,8 @@ This is a **Minecraft Forge mod** that runs directly inside Minecraft 1.8.9. Unl
 
 ## Quick Start
 
+**New to Forge modding?** Start with **[GETTING_STARTED.md](GETTING_STARTED.md)** for a 5-minute quick start guide!
+
 ### Prerequisites
 - Java 8 (JDK)
 - Minecraft 1.8.9 with Forge installed
