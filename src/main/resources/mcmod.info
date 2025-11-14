@@ -1,0 +1,16 @@
+[
+{
+  "modid": "hypixelbazaarflip",
+  "name": "Hypixel Bazaar Flip",
+  "description": "A Minecraft 1.8.9 Forge mod for Hypixel Bazaar flipping automation.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["AbuAjmal"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

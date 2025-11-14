@@ -1,60 +1,90 @@
-#                                      Minecraft-Gui-Macro
-A simple python script to automate mouse clicks and keyboard inputs through pyautogui;
+# Hypixel Bazaar Flipping Macro
 
-Every slot for a minecraft chest/inventory is pre-coded as helper functions, making it alot easier.
-The format for how the slots are layed out are as follows
+A Minecraft 1.8.9 Forge mod for Hypixel Bazaar flipping automation.
 
-# Slot Layouts
+## About This Project
 
-DoubleChest, 1-54 , starting from top left corner going each row left to right.
+This is a **Minecraft Forge mod** that runs directly inside Minecraft 1.8.9. Unlike external scripts that automate mouse clicks, this mod integrates with Minecraft's internal systems for better reliability and functionality.
 
-Inventory, 1-27, starting from top left corner going each row left to right.
+## Quick Start
 
-Chest, 1-27, starting from top left corner going each row left to right.
+### Prerequisites
+- Java 8 (JDK)
+- Minecraft 1.8.9 with Forge installed
 
+### Building the Mod
 
-# All helper functions:
+1. **First-time setup** (downloads Forge and sets up workspace):
+   ```bash
+   ./gradlew setupDecompWorkspace
+   ```
 
-click_slot(gui, slot, location="the slot layout"):
+2. **Build the mod**:
+   ```bash
+   ./gradlew build
+   ```
+   The mod JAR will be in `build/libs/`
 
-shift_click_slot(gui, slot, location="the slot layout", times=1):
+3. **Test the mod**:
+   ```bash
+   ./gradlew runClient
+   ```
 
-wait(sec):
+### Installing the Mod
 
-type_text(text):
+1. Build the mod using the instructions above
+2. Install Minecraft Forge 1.8.9 from https://files.minecraftforge.net/
+3. Copy `build/libs/HypixelBazaarFlip-1.0.0.jar` to your Minecraft `mods` folder
+4. Launch Minecraft with the Forge 1.8.9 profile
 
-press_key(key):
+## Documentation
 
-type_and_enter(text):
+For a complete guide on how to develop Minecraft 1.8.9 Forge mods, see **[MODDING_GUIDE.md](MODDING_GUIDE.md)**.
 
-sign_done():
+The guide covers:
+- Setting up your development environment
+- Understanding the project structure
+- Building and testing your mod
+- Adding features (events, commands, GUIs, keybindings)
+- Debugging common issues
+- Resources for learning more
 
-left_click(x, y, label=None):
+## Project Structure
 
-right_click(x, y=None, label=None):
+```
+├── build.gradle                 # Gradle build configuration
+├── src/main/java/              # Java source code
+│   └── com/hypixel/bazaarflip/
+│       ├── HypixelBazaarFlipMod.java      # Main mod class
+│       └── ExampleEventHandler.java        # Example event handler
+├── src/main/resources/         # Mod resources
+│   └── mcmod.info              # Mod metadata
+└── MODDING_GUIDE.md            # Complete modding guide
+```
 
-shift_left_click(x, y, times=1):
+## Features
 
-multi_click(x, y, times, cps, button='left'):
+This is a starter template for creating a Hypixel Bazaar flipping mod. The basic mod structure is in place, and you can extend it with:
 
-shift_double_click(x, y):
+- Event handlers for detecting bazaar interactions
+- GUI overlays for displaying flip opportunities  
+- Configuration system for user preferences
+- Commands for controlling the mod
+- Keybindings for quick access
 
-# How to write the macro:
+## Development
 
-    actions = [
+See [MODDING_GUIDE.md](MODDING_GUIDE.md) for detailed development instructions.
 
-        #you write the helper functions in the order you want here
-        #add "lambda: " as a prefix to each function like this:
+## Important Notes
 
-        lambda: click_slot(gui, 23, location="chest"),
+⚠️ **Hypixel Rules**: Ensure any automation complies with Hypixel's Terms of Service and rules. Use of macros and automation may violate their policies.
 
+⚠️ **Client-Side Only**: This mod is client-side only and does not require installation on servers.
 
+## License
 
-
-
-
-    ]
-    return actions
+This project is open source. Please check Hypixel's rules before using any automation on their network.
 
 
 
